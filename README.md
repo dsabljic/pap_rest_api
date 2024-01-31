@@ -29,7 +29,7 @@ Script takes in two arguments:
 - path to the CSV file
 - the key for sorting the data (`name`, `phone`, `email` or `address`)
 ```bash
-python3 parse.py --file ./data/data.csv name
+python3 parse.py ./data/data.csv name
 ```
 
 ## Running the REST API Server
