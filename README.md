@@ -1,5 +1,28 @@
 # PAP REST API
 
+## Postavljanje projekta
+
+### Kloniranje repozitorija
+```bash
+git clone https://github.com/dsabljic/pap_rest_api.git
+```
+
+### Kreiranje virtualnog okruženja
+```bash
+cd pap_rest_api
+python3 -m venv env
+```
+
+### Aktivacija virtualnog okruženja
+```bash
+source env/bin/activate
+```
+
+### Instaliranje potrebnih modula
+```bash
+pip3 install -r requirements.txt
+```
+
 ## Converting CSV to JSON
 Run parse.py to convert the data.csv file into a JSON file.
 Script takes in two arguments:
