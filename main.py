@@ -23,6 +23,11 @@ args = parser.parse_args()
 data_file = args.file
 data = load_data(data_file)
 
+# Home page
+@app.route('/', methods=['GET'])
+def display_home_page():
+    return jsonify({'/user/<email>': 'display user with a given e-mail address', '/users': 'display all users'})
+
 # CRUD operations
 @app.route('/users', methods=['GET'])
 def get_users():
